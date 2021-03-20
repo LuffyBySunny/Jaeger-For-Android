@@ -1,0 +1,3 @@
+include ':jaeger'
+include ':app'
+rootProject.name = "Jeager4Android"
