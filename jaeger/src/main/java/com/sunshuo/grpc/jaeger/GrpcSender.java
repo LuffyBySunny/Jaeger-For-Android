@@ -18,8 +18,6 @@ public class GrpcSender extends ThriftSender {
 
     private static final int ONE_MB_IN_BYTES = 1048576;
 
-    private String mIp;
-    private int mPort;
     private ManagedChannelBuilder mChannelBuilder;
 
     /**

@@ -23,7 +23,8 @@ public class JaegerUtil {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                String endPoint = "http://172.20.116.30:14268/api/traces";
+                //String endPoint = "http://172.20.116.30:14268/api/traces";
+                // For Jeager IP is Agent
                 Sender sender = new GrpcSender("172.20.116.11", 14250);
                 //Sender sender = new HttpSender.Builder(endPoint).build();
                 Sampler sampler = new ConstSampler(true);
